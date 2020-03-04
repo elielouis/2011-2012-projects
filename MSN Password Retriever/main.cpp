@@ -1,16 +1,9 @@
 #include <windows.h>
-
 #include <commctrl.h>
-
 #include "WinCred.h"
-
 #include "Wincrypt.h"
-
-
-#
-pragma comment(lib, "crypt32.lib")# pragma comment(lib, "Advapi32.lib")# pragma comment(lib, "comctl32.lib")
-
-# define IDC_LISTVIEW 300
+#pragma comment(lib, "crypt32.lib")# pragma comment(lib, "Advapi32.lib")# pragma comment(lib, "comctl32.lib")
+#define IDC_LISTVIEW 300
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 void InitWindow(HWND hwnd, HINSTANCE hInstance);
